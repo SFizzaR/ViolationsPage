@@ -13,8 +13,7 @@ const app_service_1 = require("./app.service");
 const typeorm_1 = require("@nestjs/typeorm");
 const violations_module_1 = require("./violations/violations.module");
 const violation_entity_1 = require("./violations/entities/violation.entity");
-const users_module_1 = require("./users/users.module");
-const user_entity_1 = require("./users/entities/user.entity");
+
 let AppModule = class AppModule {
 };
 exports.AppModule = AppModule;
@@ -26,13 +25,12 @@ exports.AppModule = AppModule = __decorate([
                 host: 'localhost',
                 port: 3306,
                 username: 'root',
-                password: 'Internship18@',
+                password: 'password',
                 database: 'nestjs_mysql',
-                entities: [violation_entity_1.Violation, user_entity_1.User],
+                entities: [violation_entity_1.Violation],
                 synchronize: true,
             }),
             violations_module_1.ViolationsModule,
-            users_module_1.UsersModule
         ],
         controllers: [app_controller_1.AppController],
         providers: [app_service_1.AppService],
