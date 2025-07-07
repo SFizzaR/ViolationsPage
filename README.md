@@ -1,16 +1,13 @@
 # 🚚 Violations Page
 Internship task (OPENPORT)
+
 At Openport, pings are generated for violations of the following types:
 
-Harsh Braking
-
-Overspeeding
-
-Multiple Violations
-
-Nighttime Driving
-
-Continuous Violations
+1. Harsh Braking
+2. Overspeeding
+3. Multiple Violations
+4. Nighttime Driving
+5. Continuous Violations
 
 This single-page application:
 
@@ -37,7 +34,7 @@ This single-page application:
 | Backend   | NestJS         |
 | Database  | MySQL          |
 
-## 🚀Installation 
+## 🚀 Installation 
 
 1️. Clone the repository:
 ```bash
