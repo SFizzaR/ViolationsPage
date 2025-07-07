@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
+.custom-dropdown .dropdown-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    min-width: 220px;
+    z-index: 2000 !important;
+}
+
+.custom-dropdown .dropdown-item {
+    background-color: #f8f9fa;
+    border: none;
+    text-align: left;
+    padding: 10px;
+    border-radius: 5px;
+    color: #333;
+}
+
+.custom-dropdown .dropdown-item:hover {
+    background-color: #e9ecef;
+    color: #000;
+}
+
+
+.custom-pagination .page-item .page-link {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    color: #0e0e0e;
+    padding: 6px 12px;
+    transition: all 0.2s ease;
+}
+
+/* Hover effect */
+.custom-pagination .page-item .page-link:hover {
+    background-color: #a8a8a8;
+    border: none;
+    color: #0e0e0e;
+    transition: all 0.2s ease;
+}
+
+/* Disabled state */
+.custom-pagination .page-item.disabled .page-link {
+    background-color: transparent;
+    border: none;
+    color: #d1cfcf;
+    cursor: not-allowed;
+    pointer-events: none;
+    transition: all 0.2s ease;
+}
+
+/* Active pagination item */
+.custom-pagination .page-item.active .page-link {
+    background-color: #5d8ef8;
+    color: white;
+    border: none;
+    transition: all 0.2s ease;
+}
+
+
+option {
+    background-color: #fff;
+}
+
+.custom-datepicker {
+    padding-right: 33px !important;
+}
