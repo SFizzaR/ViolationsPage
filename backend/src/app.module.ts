@@ -4,8 +4,6 @@ import { AppService } from './app.service';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { ViolationsModule } from './violations/violations.module';
 import { Violation } from './violations/entities/violation.entity';
-import { UsersModule } from './users/users.module';
-import { User } from './users/entities/user.entity';
 
 @Module({
   imports: [
@@ -14,13 +12,12 @@ import { User } from './users/entities/user.entity';
       host: 'localhost',
       port: 3306, //default port 
       username: 'root',
-      password: 'Internship18@',
+      password: 'password',
       database: 'nestjs_mysql',
-      entities: [Violation, User],
+      entities: [Violation],
       synchronize: true,
     }),
     ViolationsModule,
-    UsersModule
   ],
   controllers: [AppController],
   providers: [AppService],
