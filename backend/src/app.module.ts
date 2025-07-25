@@ -12,7 +12,7 @@ import { Violation } from './violations/entities/violation.entity';
       host: 'localhost',
       port: 3306, //default port 
       username: 'root',
-      password: 'password',
+      password: 'Internship18@',
       database: 'nestjs_mysql',
       entities: [Violation],
       synchronize: true,
